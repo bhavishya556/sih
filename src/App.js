@@ -1,23 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { Route, Routes } from 'react-router-dom';
+import Agencys from './pages/Agencys';
+import Login from './pages/Login';
+import List from './pages/List';
+import Alert from './pages/Alert';
+// import Demo from './pages/Demo';
+import Home from './pages/Home';
+
+import Map from './comp/Map';
+import Dmap from './comp/Dmap'; // Update the import
+import Land from './pages/Land';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Routes>
+        <Route path='/agencys' element={<Agencys />} />
+        <Route path='/login' element={<Login />} />
+        <Route path='/list' element={<List />} />
+        {/* <Route path='/' element={<Home/>} /> */}
+        <Route path='/alert' element={<Alert />} />
+        {/* <Route path='/dis' element={<Dis />} /> */}
+        <Route path='/map/:distance' element={<Map />} />
+        <Route path='/dmap/:coordinates' element={<Dmap />} />
+        <Route path='/' element={<Land />} />
+        {/* <Route path='/demo' element={<Demo />} /> */}
+      </Routes>
     </div>
   );
 }

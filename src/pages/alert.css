@@ -1,0 +1,48 @@
+/* AgencyDetails.css */
+
+/* Center everything horizontally */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  /* Style for the button */
+  .get-location-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 20px; /* Add margin to separate button from other elements */
+  }
+  
+  /* Style for the input field */
+  .agency-email-input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  /* Style for the agency details section */
+  .agency-details {
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center; /* Center text horizontally */
+    background-color: #f8f8f8; /* Background color for the details section */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+  }
+  .add{
+    background-color: #007bff;
+    padding: 20px;
+    border-radius: 50px;
+    color: white;
+
+  }
+  /* Additional styles can be added as needed */
+  

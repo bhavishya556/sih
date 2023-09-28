@@ -1,0 +1,29 @@
+/* Map container */
+.map-container {
+ 
+    border: 2px solid #ccc;
+    height: 600px;
+  
+  }
+  
+  /* Location buttons */
+  .location-buttons {
+    margin-top: 10px;
+  }
+  
+  button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin-right: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  .leaflet-routing-alt{
+    background-color: white;
+  }
